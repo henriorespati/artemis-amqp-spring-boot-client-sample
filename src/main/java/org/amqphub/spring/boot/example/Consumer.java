@@ -2,11 +2,11 @@ package org.amqphub.spring.boot.example;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
+// import org.springframework.beans.factory.annotation.Autowired;
 // import org.springframework.boot.context.event.ApplicationReadyEvent;
 // import org.springframework.context.event.EventListener;
 import org.springframework.jms.annotation.JmsListener;
-import org.springframework.jms.config.JmsListenerEndpointRegistry;
+// import org.springframework.jms.config.JmsListenerEndpointRegistry;
 // import org.springframework.jms.listener.*;
 import org.springframework.stereotype.Component;
 
@@ -15,8 +15,8 @@ public class Consumer {
 
     private static final Logger LOG = LoggerFactory.getLogger(Consumer.class);
 
-    @Autowired
-    private JmsListenerEndpointRegistry registry;
+    // @Autowired
+    // private JmsListenerEndpointRegistry registry;
 
     @JmsListener(destination = "example") //, id = "jmsListener")
     public void processMsg(String message) {
